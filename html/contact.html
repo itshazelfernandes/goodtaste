@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Contact Us-FashionHub Mumbai</title>
+    <link href="../CSS/contactstyle.css" rel="stylesheet" type="text/css">
+    <script src="../JS/contactscript.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="b-header">
+        <div class="contact-header">
+            <div class="home option">
+                <button class="menu-button" onclick="location.href = 'index.html';" type="button" id="search-button">
+                    <i class="fa fa-home" style="color: #fff; font-size:18px;"></i>
+                </button>
+            </div>
+            <div class="option">
+                <a href="https://image.freepik.com/free-vector/banner-template-website-construction-work-progress_44102-38.jpg"><img src="../Images/logo.png" width="250px" id="Logo" alt="Logo"></a>
+            </div>
+            <div class="search option" id="search">
+                <button class="menu-button" onclick="appear()" type="button" id="search-button">
+                    <i class="fa fa-search" style="color: #fff; font-size:18px;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--<header>
+        <div class="header" id="Top">
+            <header>
+                <div>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </header>-->
+    <div class="phone-outer">
+        <div class="phone-inner">
+            <h1><center>Contact Us</center></h1>
+            <form method="get" class="contact-form" autocomplete="off">
+                <label for="name" id="name">Name:</label><br>
+                <input type="text" id="name_input" name="name" value="John" class="input-box">
+                <br><br>
+                <label id="age">Age:</label><br />
+                <input type="number" min="18" max="100" step="1" id="age_input" class="input-box">
+                <br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="sample@gmail.com" class="input-box">
+                <br><br>
+                <label for="sex">Sex:</label><br>
+                <input type="radio" id="male" name="sex" value="male"><label>Male</label>
+                <input type="radio" id="female" name="sex" value="female"><label>Female</label>
+                <br><br>
+                <label for="cuisine">Cuisines:</label><br>
+                <input type="checkbox" id="indian"><label>Indian</label> <input type="checkbox" id="Chinese"><label>Chinese</label><br>
+                <input type="checkbox" id="Arab"><label>Arab</label> <input type="checkbox" id="Japanese"><label>Japanese</label>
+                <br><br>
+                <label for="course">Choose a Course Type:</label>
+                <select id="course">
+                    <option value="Main Course">Main Course</option>
+                    <option value="Sides">Sides</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Drinks">Drinks</option>
+                </select><br><br>
+                <label>Query:</label><br />
+                <textarea placeholder="What would you like to ask?" style="width:380px; height: 70px; margin-top: 5px;" id="query"></textarea><br><br>
+                <!--<span id="display_message">Input: </span>-->
+                <!--</form>-->
+        </div>
+        <div class="phone-control">
+            <button class="menu-button" onclick="showMessage();" type="button" id="search-button" style="background-color: #27a193; margin: ">
+                <i class="fa fa-check-circle" style="color: white; font-size:60px;"></i>
+            </button>
+        </div>
+        </form>
+        <div class="output">
+            <span id="display_message">Click the Tickmark Button to see Input: </span>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://image.freepik.com/free-vector/banner-template-website-construction-work-progress_44102-38.jpg">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#Top">Back To Top</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
